@@ -48,11 +48,8 @@ class _ChatViewState extends State<ChatView> {
               onPressed: () {},
               icon: const Icon(Icons.dashboard),
             ),
-            title: const Chip(
-              label: Text('IntelliChat'),
-              elevation: 0,
-              visualDensity: VisualDensity.compact,
-            ),
+            title: const Text('IntelliChat +'),
+            centerTitle: true,
           ),
           body: Column(
             children: [
@@ -81,11 +78,9 @@ class _ChatViewState extends State<ChatView> {
                                           SendMessage(
                                               'Escreva um script em Python'),
                                         ),
-                                    child: Card(
+                                    child: const Card(
                                       elevation: 0,
-                                      color:
-                                          Theme.of(context).colorScheme.primary,
-                                      child: const Padding(
+                                      child: Padding(
                                         padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           crossAxisAlignment:
@@ -109,11 +104,9 @@ class _ChatViewState extends State<ChatView> {
                                           SendMessage(
                                               'Quero ajuda para estudar'),
                                         ),
-                                    child: Card(
+                                    child: const Card(
                                       elevation: 0,
-                                      color:
-                                          Theme.of(context).colorScheme.primary,
-                                      child: const Padding(
+                                      child: Padding(
                                         padding: EdgeInsets.all(12.0),
                                         child: Column(
                                           crossAxisAlignment:

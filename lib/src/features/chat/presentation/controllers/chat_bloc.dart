@@ -34,7 +34,7 @@ class ChatBloc extends Bloc<ChatEvent, ChatState> {
       );
     } catch (error) {
       emit(
-        state.copyWith(isLoading: false),
+        state.copyWith(isLoading: false, messages: [...state.messages]),
       );
     }
   }

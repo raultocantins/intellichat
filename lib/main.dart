@@ -17,11 +17,11 @@ class MyApp extends StatelessWidget {
       title: 'IntelliChat',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
-        colorScheme: const ColorScheme.dark(
-          primary: Color(0XFF333333),
-        ),
-      ),
+          brightness: Brightness.dark,
+          // colorScheme: const ColorScheme.dark(
+          //   primary: Color(0XFF333333),
+          // ),
+          useMaterial3: true),
       home: BlocProvider(
         create: (context) => ChatBloc(GeminiAi()),
         child: const ChatView(),

@@ -2,7 +2,9 @@ import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:intellichat/src/shared/repositories/artificial_intelligence/artificial_intelligente.dart';
 
 class GeminiAi implements ArtificialIntelligence {
-  final model = GenerativeModel(model: 'gemini-1.5-flash-latest', apiKey: '');
+  final model = GenerativeModel(
+      model: 'gemini-1.5-flash-latest',
+      apiKey: 'AIzaSyANcVABE3Eqk2qmaepMpSWTriEGiD6HrkE');
 
   @override
   Future<String?> sendMessage(String prompt) async {
